@@ -12,7 +12,7 @@ USE JiraSyncMachine;
 CREATE TABLE sync_machine_account (
    user_id              INT AUTO_INCREMENT  NOT NULL,
    username             VARCHAR(30)         NOT NULL,
-   password             CHARACTER(30)       NOT NULL,
+   password             CHAR(64)       NOT NULL,
    CONSTRAINT PK_SYNC_MACHINE_ACCOUNT PRIMARY KEY (user_id)
 );
 
