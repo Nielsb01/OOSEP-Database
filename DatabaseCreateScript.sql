@@ -13,7 +13,7 @@ USE JiraSyncMachine
 /*==============================================================*/
 CREATE TABLE jira_user (
    user_id							INT                  NOT NULL,
-   origin_instance_user_key		VARCHAR(13)          NOT NULL,
+   origin_instance_user_key			VARCHAR(13)          NOT NULL,
    destination_instance_user_key	VARCHAR(13)          NOT NULL,
    auto_sync						BIT                  NOT NULL,
    CONSTRAINT PK_JIRA_USER PRIMARY KEY NONCLUSTERED (user_id),
