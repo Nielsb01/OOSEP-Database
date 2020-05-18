@@ -12,7 +12,7 @@ USE JiraSyncMachine;
 CREATE TABLE sync_machine_account (
    user_id              INT AUTO_INCREMENT  NOT NULL,
    username             VARCHAR(30)         NOT NULL,
-   password             CHAR(64)       NOT NULL,
+   password             CHAR(64)			NOT NULL,
    CONSTRAINT PK_SYNC_MACHINE_ACCOUNT PRIMARY KEY (user_id)
 );
 
@@ -21,7 +21,7 @@ CREATE TABLE sync_machine_account (
 /*==============================================================*/
 CREATE TABLE jira_user (
    user_id							INT                  NOT NULL,
-   origin_instance_user_key			CHAR(13)           NULL,
+   origin_instance_user_key			CHAR(13)		   NULL,
    destination_instance_user_key	CHAR(13)           NULL,
    auto_sync						BIT                  NOT NULL,
    CONSTRAINT PK_JIRA_USER PRIMARY KEY NONCLUSTERED (user_id),
