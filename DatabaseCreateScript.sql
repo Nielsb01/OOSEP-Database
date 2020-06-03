@@ -45,6 +45,6 @@ CREATE TABLE worklog (
 /* TABLE: automatic_synchronisation                             */
 /*==============================================================*/
 CREATE TABLE automatic_synchronisation (
-	synchronisation_date DATETIME NOT NULL,
+	synchronisation_moment DATETIME NOT NULL,
     CONSTRAINT PK_AUTOMATIC_SYNCHRONISATION PRIMARY KEY (synchronisation_date)
 );
