@@ -40,3 +40,11 @@ CREATE TABLE worklog (
    worklog_id			 INT                  NOT NULL,
    CONSTRAINT PK_WORKLOG PRIMARY KEY (worklog_id)
 );
+
+/*==============================================================*/
+/* TABLE: automatic_synchronisation                             */
+/*==============================================================*/
+CREATE TABLE automatic_synchronisation (
+	synchronisation_date DATETIME NOT NULL,
+    CONSTRAINT PK_AUTOMATIC_SYNCHRONISATION PRIMARY KEY (synchronisation_date)
+);
