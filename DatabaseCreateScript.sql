@@ -40,3 +40,16 @@ CREATE TABLE worklog (
    worklog_id			 INT                  NOT NULL,
    CONSTRAINT PK_WORKLOG PRIMARY KEY (worklog_id)
 );
+
+/*==============================================================*/
+/* TABLE: error_logs                                             */
+/*==============================================================*/
+CREATE TABLE error_logs (
+  error_id							INT AUTO_INCREMENT  NOT NULL,
+  error_timestamp					timestamp 			NOT NULL 
+      DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  class_name 						VARCHAR(255)		NOT NULL,
+  method_name						VARCHAR(50)			NOT NULL,
+  error_message						text				NOT NULL,
+  CONSTRAINT PK_ERROR_ID PRIMARY KEY (error_id)
+);
