@@ -40,11 +40,6 @@ CREATE TABLE worklog (
    worklog_id			 INT                  NOT NULL,
    CONSTRAINT PK_WORKLOG PRIMARY KEY (worklog_id)
 );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 763d576310632357f8b127f1024bee63e7e8942f
 
 /*==============================================================*/
 /* TABLE: error_logs                                             */
@@ -58,9 +53,6 @@ CREATE TABLE error_logs (
   error_message						text				NOT NULL,
   CONSTRAINT PK_ERROR_ID PRIMARY KEY (error_id)
 );
-<<<<<<< HEAD
->>>>>>> 7ea4259828be21be127abcf5c8384b7bb31ab109
-=======
 
 /*==============================================================*/
 /* TABLE: automatic_synchronisation                             */
@@ -69,5 +61,3 @@ CREATE TABLE automatic_synchronisation (
 	synchronisation_moment DATETIME NOT NULL,
     CONSTRAINT PK_AUTOMATIC_SYNCHRONISATION PRIMARY KEY (synchronisation_moment)
 );
-
->>>>>>> 763d576310632357f8b127f1024bee63e7e8942f
