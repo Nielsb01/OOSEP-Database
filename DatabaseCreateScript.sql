@@ -42,14 +42,6 @@ CREATE TABLE worklog (
 );
 
 /*==============================================================*/
-/* TABLE: automatic_synchronisation                             */
-/*==============================================================*/
-CREATE TABLE automatic_synchronisation (
-	synchronisation_moment DATETIME NOT NULL,
-    CONSTRAINT PK_AUTOMATIC_SYNCHRONISATION PRIMARY KEY (synchronisation_moment)
-);
-
-/*==============================================================*/
 /* TABLE: error_logs                                             */
 /*==============================================================*/
 CREATE TABLE error_logs (
@@ -61,3 +53,12 @@ CREATE TABLE error_logs (
   error_message						text				NOT NULL,
   CONSTRAINT PK_ERROR_ID PRIMARY KEY (error_id)
 );
+
+/*==============================================================*/
+/* TABLE: automatic_synchronisation                             */
+/*==============================================================*/
+CREATE TABLE automatic_synchronisation (
+	synchronisation_moment DATETIME NOT NULL,
+    CONSTRAINT PK_AUTOMATIC_SYNCHRONISATION PRIMARY KEY (synchronisation_moment)
+);
+
