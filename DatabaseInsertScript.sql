@@ -1,7 +1,7 @@
 /* Database populeren */
 
 INSERT INTO sync_machine_account (username, password)
-VALUES ("gebruikersnaam", "wachtwoord"),
+VALUES ("gebruikersnaam", "dc00c903852bb19eb250aeba05e534a6d211629d77d055033806b783bae09937"),
 	   ("username", "password"),
 	   ("user3", "origine");
 
