@@ -34,9 +34,9 @@ CREATE TABLE jira_user (
 );
 
 /*==============================================================*/
-/* TABLE: worklog                                               */
+/* TABLE: synchronised_worklog                                               */
 /*==============================================================*/
-CREATE TABLE worklog (
+CREATE TABLE synchronised_worklog (
    worklog_id			 INT                  NOT NULL,
    CONSTRAINT PK_WORKLOG PRIMARY KEY (worklog_id)
 );
@@ -60,4 +60,18 @@ CREATE TABLE error_logs (
 CREATE TABLE automatic_synchronisation (
 	synchronisation_moment DATETIME NOT NULL,
     CONSTRAINT PK_AUTOMATIC_SYNCHRONISATION PRIMARY KEY (synchronisation_moment)
+);
+
+/*==============================================================*/
+/* TABLE: failed_worklog                                               */
+/*==============================================================*/
+CREATE TABLE failed_worklog  (
+  worklog_id				INT           	NOT NULL,
+  worker					CHAR(13)      	NOT NULL,
+  started					VARCHAR(25)		NOT NULL,
+  time_spent_seconds		INT				NOT NULL,
+  origin_task_id			VARCHAR(25)		NOT NULL,
+  
+  
+   CONSTRAINT PK_FAILED_WORKLOG PRIMARY KEY (worklog_id)
 );
